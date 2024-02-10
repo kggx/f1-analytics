@@ -3,14 +3,14 @@ import pathlib
 
     
 # Read results
-df = pd.read_csv(pathlib.Path('./source/results.csv'), encoding='utf-8')
+df = pd.read_csv(pathlib.Path('./source/results.csv'), encoding='utf-8', na_values='\\N')
 
 # Read meta data
-races = pd.read_csv(pathlib.Path('./source/races.csv'), encoding='utf-8')
-drivers = pd.read_csv(pathlib.Path('./source/drivers.csv'), encoding='utf-8')
-constructors = pd.read_csv(pathlib.Path('./source/constructors.csv'), encoding='utf-8')
-circuits = pd.read_csv(pathlib.Path('./source/circuits.csv'), encoding='utf-8')
-status = pd.read_csv(pathlib.Path('./source/status.csv'), encoding='utf-8')
+races = pd.read_csv(pathlib.Path('./source/races.csv'), encoding='utf-8', na_values='\\N')
+drivers = pd.read_csv(pathlib.Path('./source/drivers.csv'), encoding='utf-8', na_values='\\N')
+constructors = pd.read_csv(pathlib.Path('./source/constructors.csv'), encoding='utf-8', na_values='\\N')
+circuits = pd.read_csv(pathlib.Path('./source/circuits.csv'), encoding='utf-8', na_values='\\N')
+status = pd.read_csv(pathlib.Path('./source/status.csv'), encoding='utf-8', na_values='\\N')
 
 # Join Data
 df = df.join(races, on='raceId', how='left', rsuffix='_races') \
