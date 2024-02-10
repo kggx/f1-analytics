@@ -1,3 +1,9 @@
+# Local
+.vscode
+source
+f1_results.csv
+f1_results_columns.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
