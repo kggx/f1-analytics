@@ -8,5 +8,5 @@
 
 ## Weiterführend:
 - Erkunden des Datasets --> Noch weitere Daten in `.source/*.csv`
-- Daten modellierung üben
+- Daten Modellierung üben
 
